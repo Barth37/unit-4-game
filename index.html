@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Crystal Collector</title>
-        <link rel="text/stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="text/stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         
     </head>
 
     <body>
         <div id="container">
             <h1>Crystal Collector Game</h1>
+            <br>
+            <br>
             <div id="core">
                 <div id="instructions">
                     <ul>
@@ -24,12 +26,23 @@
                         <br> 
                         <li>Each time the game restarts, the values of the gems change.</li>
                     </ul>
+                    <br><br>
                     <p>Good luck!</p>
                 </div>
-                <div id="random">
-                    <div id="winslosses"></div>
+                <div id="random">Random Number
+                    <div id="randomnumber"></div>
                 </div>
+                <div id="winslosses"> 
+                    <div id="wins">Wins</div>
+                    <div id="losses">Losses</div>
+                </div>                     
+                
                 <div id="gems"></div>
+                    <input type="button" class="diamond" value="Diamond">
+                    <input type="button" class="emerald" value="Emerald">
+                    <input type="button" class="sapphire" value="Sapphire">
+                    <input type="button" class="ruby" value="Ruby">
+                <br><br>   
                 <div id="score">
                     <p>Your total score is:</p>
                     <div id="myscore"></div>
