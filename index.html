@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Crystal Collector</title>
+        <link rel="text/stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="text/stylesheet" type="text/css" href="assets/css/style.css">
+        
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Crystal Collector Game</h1>
+            <div id="core">
+                <div id="instructions">
+                    <ul>
+                        <li>You will be given a random number at the start of the game.</li>
+                        <br>
+                        <li>There are four crystals below.  By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+                        <br>
+                        <li>You win the game by matching your total score with the random number below.  If you exceed the random number, you lose.</li>
+                        <br>
+                        <li>The value of each crystal is hidden so you have to figure out the value of each by clicking on them.</li>
+                        <br> 
+                        <li>Each time the game restarts, the values of the gems change.</li>
+                    </ul>
+                    <p>Good luck!</p>
+                </div>
+                <div id="random">
+                    <div id="winslosses"></div>
+                </div>
+                <div id="gems"></div>
+                <div id="score">
+                    <p>Your total score is:</p>
+                    <div id="myscore"></div>
+                </div>                
+            </div>
+        </div>
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
