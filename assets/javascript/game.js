@@ -7,10 +7,10 @@ $(document).ready(function(){
     
 
 	function randomNum(){
-		return Math.floor(Math.random() * (120 +1)) + 19;
+		return Math.floor(Math.random() * (120 - 19)) + 19;
 	}
 
-	var targetNumber = randomNum;
+	var targetNumber = randomNum();
 	$("#randomNumber").html(targetNumber);
 
 	var btn1= Math.floor(Math.random() * (12 +1)) + 1;
@@ -22,7 +22,7 @@ $(document).ready(function(){
 	function reset(){
 		total = 0;
 		$("#randomNumber").html(targetNumber);
-		targetNumber = randomNum;
+		targetNumber = randomNum();        
 		$("#myScore").text(total);
 		btn1= Math.floor(Math.random() * (12 +1)) + 1;
 		btn2= Math.floor(Math.random() * (12 +1)) + 1;
@@ -33,49 +33,51 @@ $(document).ready(function(){
 	}
 
 	
-	$("#diamond").on("click", function(){
+	$(".diamond").on("click", function(){
 		total += btn1;
-		WinLoose();
+		WinLose();
 		$("#myScore").text(total);
 		
 	});
 
-	$("emerald").on("click", function(){
+	$(".emerald").on("click", function(){
 		total += btn2;
-		WinLoose();
+		WinLose();
 		$("#myScore").text(total);
 		
 
 	});
 
-	$("#sapphire").on("click", function(){
+	$(".sapphire").on("click", function(){
 		total += btn3;
-		WinLoose();
+		WinLose();
 		$("#myScore").text(total);
 		
 
 	});
 
-	$("#ruby").on("click", function(){
+	$(".ruby").on("click", function(){
 		total += btn4;
-		WinLoose();
+		WinLose();
 		$("#myScore").text(total);
 		
 
 	});
 
-	function WinLoose (){
+	function WinLose (){
 
 	if (total === targetNumber){
-		wins += 1;
+        wins += 1;
+        $("#wins").text("Wins: " + wins);
 		alert("Winner!");
-		$("#wins").text(wins);
 		reset();
 
-	} else if(counter > targetNumber){
-		losses += 1;
+    }
+
+    else if (total > targetNumber){
+        losses += 1;
+        $("#losses").text("Losses: " + losses);
 		alert("You lost!");
-		$("#losses").text(losses);
 		reset();
 	}
 	
