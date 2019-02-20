@@ -42,7 +42,15 @@ p {
     border-radius: 25px;
 }
 
-#winslosses {
+#randomNumber {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+#winsLosses {
     float: left;
 }
 
@@ -54,28 +62,32 @@ p {
     background-image: url(../images/diamond.png);
     padding: 10px;
     width: 100px;
-    height: 100px;   
+    height: 100px;
+    border-radius: 15px;  
 }
 
 .emerald {
     background-image: url(../images/emerald.png);
     padding: 10px;
     width: 100px;
-    height: 100px;    
+    height: 100px;
+    border-radius: 15px;    
 }
 
 .sapphire {
     background-image: url(../images/sapphire.png);
     padding: 10px;
     width: 100px;
-    height: 100px;   
+    height: 100px;
+    border-radius: 15px;   
 }
 
 .ruby {
     background-image: url(../images/ruby.png);
     padding: 10px;
     width: 100px;
-    height: 100px;    
+    height: 100px;
+    border-radius: 15px;    
 }
 
 #score {
@@ -84,4 +96,11 @@ p {
     width: 200px;
     height: 100px;
     border-radius: 25px;
+}
+
+#myScore {
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
 }
