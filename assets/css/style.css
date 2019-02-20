@@ -54,6 +54,23 @@ p {
     float: left;
 }
 
+#wins {
+    padding: 20px;
+    background-color: lightgreen;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 75px;
+}
+
+#losses {
+    padding: 20px;
+    background-color: lightgreen;
+    color: white;
+    border-radius: 15px;
+    width: 75px;
+}
+
 #gems {
     clear: both;
 }

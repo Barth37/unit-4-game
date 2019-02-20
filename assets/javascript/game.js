@@ -20,9 +20,9 @@ $(document).ready(function(){
 
 
 	function reset(){
-		total = 0;
-		$("#randomNumber").html(targetNumber);
-		targetNumber = randomNum();        
+        total = 0;
+        targetNumber = randomNum(); 
+		$("#randomNumber").html(targetNumber);      
 		$("#myScore").text(total);
 		btn1= Math.floor(Math.random() * (12 +1)) + 1;
 		btn2= Math.floor(Math.random() * (12 +1)) + 1;
