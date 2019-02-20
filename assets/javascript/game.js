@@ -13,10 +13,10 @@ $(document).ready(function(){
 	var targetNumber = randomNum();
 	$("#randomNumber").html(targetNumber);
 
-	var btn1= Math.floor(Math.random() * (12 +1)) + 1;
-	var btn2= Math.floor(Math.random() * (12 +1)) + 1;
-	var btn3= Math.floor(Math.random() * (12 +1)) + 1;
-	var btn4= Math.floor(Math.random() * (12 +1)) + 1;
+	var btn1= Math.floor(Math.random() * (12 - 1)) + 1;
+	var btn2= Math.floor(Math.random() * (12 - 1)) + 1;
+	var btn3= Math.floor(Math.random() * (12 - 1)) + 1;
+	var btn4= Math.floor(Math.random() * (12 - 1)) + 1;
 
 
 	function reset(){
@@ -24,10 +24,10 @@ $(document).ready(function(){
         targetNumber = randomNum(); 
 		$("#randomNumber").html(targetNumber);      
 		$("#myScore").text(total);
-		btn1= Math.floor(Math.random() * (12 +1)) + 1;
-		btn2= Math.floor(Math.random() * (12 +1)) + 1;
-		btn3= Math.floor(Math.random() * (12 +1)) + 1;
-		btn4= Math.floor(Math.random() * (12 +1)) + 1;
+		btn1= Math.floor(Math.random() * (12 - 1)) + 1;
+		btn2= Math.floor(Math.random() * (12 - 1)) + 1;
+		btn3= Math.floor(Math.random() * (12 - 1)) + 1;
+		btn4= Math.floor(Math.random() * (12 - 1)) + 1;
 
 
 	}
